@@ -6,6 +6,10 @@
 
 > *Repo / dev name: `dlp2music` — the public product name is **CatchMatch**.*
 
+## Download
+
+Get the signed, notarized DMG from the [latest release](https://github.com/stormychel/CatchMatch/releases/latest). Installed copies update themselves.
+
 ## Overview
 
 `CatchMatch` started as a simple shell script (`dlp2music.sh`, still bundled inside the app), but it's now a full macOS app with a graphical interface. Paste one or more URLs and the app downloads, converts, and imports both audio and video into Apple Music and (optionally) Apple TV.
