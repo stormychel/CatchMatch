@@ -1,0 +1,45 @@
+#!/bin/bash
+# Stub ffmpeg for Tests/test_pipeline.sh: creates the output file it was asked
+# for. STUB_FFMPEG_FAIL=1 makes every call fail, as a broken mux would. #109
+set -u
+
+# STUB_FFMPEG_ARGS_LOG: if set, each invocation's arguments are appended to it.
+[[ -n "${STUB_FFMPEG_ARGS_LOG:-}" ]] && printf '%s\n' "$*" >> "$STUB_FFMPEG_ARGS_LOG"
+
+# An encoder query, not a conversion: answer it and stop, rather than treat
+# "-encoders" as the output file. STUB_NO_VIDEOTOOLBOX=1 leaves Apple's
+# encoder out, as an ffmpeg built without it would.
+if [[ " $* " == *" -encoders "* ]]; then
+    echo " V....D libx264              libx264 H.264 / AVC / MPEG-4 AVC"
+    [[ "${STUB_NO_VIDEOTOOLBOX:-0}" == "1" ]] || \
+        echo " V....D h264_videotoolbox    VideoToolbox H.264 Encoder"
+    echo " A....D aac                  AAC (Advanced Audio Coding)"
+    exit 0
+fi
+
+[[ "${STUB_FFMPEG_FAIL:-0}" == "1" ]] && exit 1
+
+# Every -i input must exist. Real ffmpeg fails on a missing file, and without
+# this check the pipeline tests would pass even if the script pointed at a file
+# it never produced.
+prev=""
+for arg in "$@"; do
+    if [[ "$prev" == "-i" && ! -f "$arg" ]]; then
+        echo "stub ffmpeg: no such input: $arg" >&2
+        exit 1
+    fi
+    prev="$arg"
+done
+
+# STUB_FFMPEG_PROGRESS lists seconds of media to report, as -progress pipe:1
+# would, when the caller asked for progress.
+if [[ " $* " == *" -progress pipe:1 "* && -n "${STUB_FFMPEG_PROGRESS:-}" ]]; then
+    for s in $STUB_FFMPEG_PROGRESS; do
+        printf 'out_time_us=%d\nprogress=continue\n' $(( s * 1000000 ))
+    done
+    printf 'progress=end\n'
+fi
+
+OUT="${!#}"   # output path is always the last argument
+printf 'stub output' > "$OUT"
+exit 0

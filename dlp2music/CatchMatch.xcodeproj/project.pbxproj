@@ -1,0 +1,780 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1BBC4120A8D26F1A1AF491E5 /* CatchMatchExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = CF0FFF8E355286033F874FB4 /* CatchMatchExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D9A1C0012E90000100CA7C01 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = D9A1C0032E90000100CA7C01 /* Sparkle */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3187DD892284D35D1C32D377 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F589952D65C53B00DE55AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2DDB9545BC141CAA41465FC6;
+			remoteInfo = CatchMatchExtension;
+		};
+		D9F589B12D65C53D00DE55AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F589952D65C53B00DE55AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F5899C2D65C53B00DE55AD;
+			remoteInfo = dlp2music;
+		};
+		D9F589BB2D65C53D00DE55AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D9F589952D65C53B00DE55AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D9F5899C2D65C53B00DE55AD;
+			remoteInfo = dlp2music;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D8A55697F25DD249ED3D1F2A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1BBC4120A8D26F1A1AF491E5 /* CatchMatchExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		CF0FFF8E355286033F874FB4 /* CatchMatchExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CatchMatchExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F5899D2D65C53B00DE55AD /* CatchMatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatchMatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F589B02D65C53D00DE55AD /* CatchMatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchMatchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9F589BA2D65C53D00DE55AD /* CatchMatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatchMatchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7CBDE26C19F6160819224CF1 /* CatchMatchExtension */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = CatchMatchExtension;
+			sourceTree = "<group>";
+		};
+		D9F5899F2D65C53B00DE55AD /* dlp2music */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = dlp2music;
+			sourceTree = "<group>";
+		};
+		D9F589B32D65C53D00DE55AD /* dlp2musicTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = dlp2musicTests;
+			sourceTree = "<group>";
+		};
+		D9F589BD2D65C53D00DE55AD /* dlp2musicUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+			);
+			path = dlp2musicUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AF5E5783A1119D3F0B43B97A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F5899A2D65C53B00DE55AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9A1C0012E90000100CA7C01 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589AD2D65C53D00DE55AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589B72D65C53D00DE55AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83D1581278C3D07CEF6F5D91 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		D9F589942D65C53B00DE55AD = {
+			isa = PBXGroup;
+			children = (
+				D9F5899F2D65C53B00DE55AD /* dlp2music */,
+				D9F589B32D65C53D00DE55AD /* dlp2musicTests */,
+				D9F589BD2D65C53D00DE55AD /* dlp2musicUITests */,
+				D9F5899E2D65C53B00DE55AD /* Products */,
+				FAFDFEDF8DD1FF582617B89D /* Frameworks */,
+				7CBDE26C19F6160819224CF1 /* CatchMatchExtension */,
+			);
+			sourceTree = "<group>";
+		};
+		D9F5899E2D65C53B00DE55AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9F5899D2D65C53B00DE55AD /* CatchMatch.app */,
+				D9F589B02D65C53D00DE55AD /* CatchMatchTests.xctest */,
+				D9F589BA2D65C53D00DE55AD /* CatchMatchUITests.xctest */,
+				CF0FFF8E355286033F874FB4 /* CatchMatchExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAFDFEDF8DD1FF582617B89D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				83D1581278C3D07CEF6F5D91 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DDB9545BC141CAA41465FC6 /* CatchMatchExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6AF6164B96EC81865CB421FE /* Build configuration list for PBXNativeTarget "CatchMatchExtension" */;
+			buildPhases = (
+				C9F653A40ACB586D1A27B95F /* Sources */,
+				AF5E5783A1119D3F0B43B97A /* Frameworks */,
+				BD3FC2DEE310C0AD78A0E844 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7CBDE26C19F6160819224CF1 /* CatchMatchExtension */,
+			);
+			name = CatchMatchExtension;
+			productName = CatchMatchExtension;
+			productReference = CF0FFF8E355286033F874FB4 /* CatchMatchExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		D9F5899C2D65C53B00DE55AD /* CatchMatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F589C42D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatch" */;
+			buildPhases = (
+				D9F589992D65C53B00DE55AD /* Sources */,
+				D9F5899A2D65C53B00DE55AD /* Frameworks */,
+				D9F5899B2D65C53B00DE55AD /* Resources */,
+				D9988F452D65E40B0073562B /* ShellScript */,
+				D8A55697F25DD249ED3D1F2A /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9DB9EB3DC6EC09734728D364 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D9F5899F2D65C53B00DE55AD /* dlp2music */,
+			);
+			name = CatchMatch;
+			packageProductDependencies = (
+				D9A1C0032E90000100CA7C01 /* Sparkle */,
+			);
+			productName = dlp2music;
+			productReference = D9F5899D2D65C53B00DE55AD /* CatchMatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D9F589AF2D65C53D00DE55AD /* CatchMatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F589C72D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatchTests" */;
+			buildPhases = (
+				D9F589AC2D65C53D00DE55AD /* Sources */,
+				D9F589AD2D65C53D00DE55AD /* Frameworks */,
+				D9F589AE2D65C53D00DE55AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F589B22D65C53D00DE55AD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D9F589B32D65C53D00DE55AD /* dlp2musicTests */,
+			);
+			name = CatchMatchTests;
+			productName = dlp2musicTests;
+			productReference = D9F589B02D65C53D00DE55AD /* CatchMatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D9F589B92D65C53D00DE55AD /* CatchMatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9F589CA2D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatchUITests" */;
+			buildPhases = (
+				D9F589B62D65C53D00DE55AD /* Sources */,
+				D9F589B72D65C53D00DE55AD /* Frameworks */,
+				D9F589B82D65C53D00DE55AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D9F589BC2D65C53D00DE55AD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D9F589BD2D65C53D00DE55AD /* dlp2musicUITests */,
+			);
+			name = CatchMatchUITests;
+			productName = dlp2musicUITests;
+			productReference = D9F589BA2D65C53D00DE55AD /* CatchMatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9F589952D65C53B00DE55AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					D9F5899C2D65C53B00DE55AD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					D9F589AF2D65C53D00DE55AD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D9F5899C2D65C53B00DE55AD;
+					};
+					D9F589B92D65C53D00DE55AD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = D9F5899C2D65C53B00DE55AD;
+					};
+				};
+			};
+			buildConfigurationList = D9F589982D65C53B00DE55AD /* Build configuration list for PBXProject "CatchMatch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9F589942D65C53B00DE55AD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D9A1C0022E90000100CA7C01 /* XCRemoteSwiftPackageReference "Sparkle" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = D9F5899E2D65C53B00DE55AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9F5899C2D65C53B00DE55AD /* CatchMatch */,
+				D9F589AF2D65C53D00DE55AD /* CatchMatchTests */,
+				D9F589B92D65C53D00DE55AD /* CatchMatchUITests */,
+				2DDB9545BC141CAA41465FC6 /* CatchMatchExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BD3FC2DEE310C0AD78A0E844 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F5899B2D65C53B00DE55AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589AE2D65C53D00DE55AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589B82D65C53D00DE55AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D9988F452D65E40B0073562B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/sh\n\nSCRIPT_PATH=\"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.app/Contents/Resources/dlp2music.sh\"\n\n# Debugging output\necho \"Checking for script at: $SCRIPT_PATH\"\n\nif [ -f \"$SCRIPT_PATH\" ]; then\n    echo \"✅ Found dlp2music.sh, setting permissions...\"\n    chmod +x \"$SCRIPT_PATH\"\nelse\n    echo \"❌ ERROR: dlp2music.sh is missing!\"\n    ls -lah \"${BUILT_PRODUCTS_DIR}/${EXECUTABLE_NAME}.app/Contents/Resources/\"\n    exit 1\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9F653A40ACB586D1A27B95F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589992D65C53B00DE55AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589AC2D65C53D00DE55AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D9F589B62D65C53D00DE55AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9DB9EB3DC6EC09734728D364 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = CatchMatchExtension;
+			target = 2DDB9545BC141CAA41465FC6 /* CatchMatchExtension */;
+			targetProxy = 3187DD892284D35D1C32D377 /* PBXContainerItemProxy */;
+		};
+		D9F589B22D65C53D00DE55AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F5899C2D65C53B00DE55AD /* CatchMatch */;
+			targetProxy = D9F589B12D65C53D00DE55AD /* PBXContainerItemProxy */;
+		};
+		D9F589BC2D65C53D00DE55AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D9F5899C2D65C53B00DE55AD /* CatchMatch */;
+			targetProxy = D9F589BB2D65C53D00DE55AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		80AE585F1D5C23B500D97257 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CatchMatchExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatchMatchExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchMatch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2music.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D9F589C22D65C53D00DE55AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D9F589C32D65C53D00DE55AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		D9F589C52D65C53D00DE55AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dlp2music/dlp2music.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"dlp2music/Preview Content\"";
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatchMatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchMatch;
+				INFOPLIST_KEY_CFBundleName = CatchMatch;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "CatchMatch sends a confirmation reply via Messages.app after importing a link you sent yourself.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2music;
+				PRODUCT_MODULE_NAME = dlp2music;
+				PRODUCT_NAME = CatchMatch;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		D9F589C62D65C53D00DE55AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = dlp2music/dlp2music.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_ASSET_PATHS = "\"dlp2music/Preview Content\"";
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatchMatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchMatch;
+				INFOPLIST_KEY_CFBundleName = CatchMatch;
+				INFOPLIST_KEY_NSAppleEventsUsageDescription = "CatchMatch sends a confirmation reply via Messages.app after importing a link you sent yourself.";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2music;
+				PRODUCT_MODULE_NAME = dlp2music;
+				PRODUCT_NAME = CatchMatch;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		D9F589C82D65C53D00DE55AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2musicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchMatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchMatch";
+			};
+			name = Debug;
+		};
+		D9F589C92D65C53D00DE55AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2musicTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatchMatch.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CatchMatch";
+			};
+			name = Release;
+		};
+		D9F589CB2D65C53D00DE55AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2musicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CatchMatch;
+			};
+			name = Debug;
+		};
+		D9F589CC2D65C53D00DE55AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0.14;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2musicUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = CatchMatch;
+			};
+			name = Release;
+		};
+		E5937F49F00916BB38925DFE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = CatchMatchExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEVELOPMENT_TEAM = 4VYV5C3L3Y;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "CatchMatchExtension-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = CatchMatch;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 1.3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.michelstorms.dlp2music.Extension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6AF6164B96EC81865CB421FE /* Build configuration list for PBXNativeTarget "CatchMatchExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80AE585F1D5C23B500D97257 /* Release */,
+				E5937F49F00916BB38925DFE /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F589982D65C53B00DE55AD /* Build configuration list for PBXProject "CatchMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F589C22D65C53D00DE55AD /* Debug */,
+				D9F589C32D65C53D00DE55AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F589C42D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F589C52D65C53D00DE55AD /* Debug */,
+				D9F589C62D65C53D00DE55AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F589C72D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F589C82D65C53D00DE55AD /* Debug */,
+				D9F589C92D65C53D00DE55AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9F589CA2D65C53D00DE55AD /* Build configuration list for PBXNativeTarget "CatchMatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9F589CB2D65C53D00DE55AD /* Debug */,
+				D9F589CC2D65C53D00DE55AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D9A1C0022E90000100CA7C01 /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D9A1C0032E90000100CA7C01 /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D9A1C0022E90000100CA7C01 /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = D9F589952D65C53B00DE55AD /* Project object */;
+}

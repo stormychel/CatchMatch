@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CatchMatch",
+  "version": "1.0",
+  "description": "Send the page you're on, or a link, straight to CatchMatch.",
+  "permissions": [
+    "activeTab",
+    "contextMenus",
+    "nativeMessaging",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Send to CatchMatch"
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}

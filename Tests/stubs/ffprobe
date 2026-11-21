@@ -1,0 +1,19 @@
+#!/bin/bash
+# Stub ffprobe for Tests/test_pipeline.sh: answers the questions the
+# pipeline asks. STUB_DURATION sets the reported length in seconds. #109
+set -u
+ARGS="$*"
+case "$ARGS" in
+    *stream=codec_type*) echo "video" ;;                       # is there a video stream
+    *format=duration*)   echo "${STUB_DURATION:-180}" ;;       # long-form guard
+    *stream=codec_name*)
+        case "$ARGS" in
+            *select_streams\ a:0*) echo "${STUB_ACODEC:-aac}" ;;
+            *)                     echo "${STUB_VCODEC:-h264}" ;;
+        esac ;;
+    *stream=pix_fmt*)    echo "${STUB_PIXFMT:-yuv420p}" ;;
+    *stream=width,height*) echo "${STUB_WIDTH:-1920},${STUB_HEIGHT:-1080}" ;;  # picks the encode bitrate
+    *select_streams\ s*) : ;;                                   # no subtitle streams
+    *) : ;;
+esac
+exit 0

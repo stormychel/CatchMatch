@@ -1,0 +1,82 @@
+# Xcode project user-specific settings
+*.xcuserdatad/
+*.xcuserdata/
+*.xcodeproj/project.xcworkspace/
+*.xcodeproj/xcuserdata/
+
+# Xcode build artifacts
+build/
+DerivedData/
+*.xcworkspace/
+*.xcworkspace/xcuserdata/
+xcuserdata/
+
+# Swift Package Manager
+.swiftpm/
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+Podfile.lock/
+
+# Carthage
+Carthage/Build/
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Archives
+*.xcarchive
+
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# Thumbnails and metadata
+._*
+.metadata_never_index
+.VolumeIcon.icns
+com.apple.timemachine.donotpresent
+**/Thumbs.db
+**/Desktop.ini
+
+# Logs
+*.log
+*.swp
+*.swo
+*.swn
+
+# Shell history and user-specific files
+.history
+.bash_history
+.zsh_history
+*.swp
+
+# Ignore built application
+*.app
+*.dSYM/
+
+# Ignore temporary Xcode files
+*.mode1v3
+*.mode2v3
+*.pbxuser
+
+# Screenshot pipeline output (#105)
+Scripts/screenshots/output/
+
+# Coverage artifacts left by a local build
+*.profraw
+
+# Release DMGs staged for upload to Gumroad.
+/.release-artifacts/
+
+# Scratch copies the release script writes to the working directory
+appcast_existing.xml
+appcast_new.xml

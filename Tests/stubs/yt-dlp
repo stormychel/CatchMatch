@@ -1,0 +1,50 @@
+#!/bin/bash
+# Stub yt-dlp for Tests/test_pipeline.sh. Writes the files a real run would
+# leave behind, without touching the network. #109
+#
+# STUB_TITLE     title reported in the .info.json (default "Stub Artist - Stub Song")
+# STUB_UPLOADER  uploader in the .info.json
+# STUB_ITEMS     how many items the URL expands to (default 1) — a playlist is
+#                just several files in the same output directory
+# STUB_NO_MEDIA  set to 1 to download nothing, as a dead link would
+# STUB_FAIL      set to 1 to exit non-zero after writing nothing
+# STUB_ARGS_LOG  if set, each invocation's arguments are appended to this file
+set -u
+
+[[ -n "${STUB_ARGS_LOG:-}" ]] && printf '%s\n' "$*" >> "$STUB_ARGS_LOG"
+
+OUT_TEMPLATE=""
+EXTRACT_AUDIO=0
+prev=""
+for arg in "$@"; do
+    [[ "$prev" == "-o" ]] && OUT_TEMPLATE="$arg"
+    [[ "$arg" == "--extract-audio" ]] && EXTRACT_AUDIO=1
+    prev="$arg"
+done
+
+[[ "${STUB_FAIL:-0}" == "1" ]] && exit 1
+[[ "${STUB_NO_MEDIA:-0}" == "1" ]] && exit 0
+
+DIR=$(dirname "$OUT_TEMPLATE")
+mkdir -p "$DIR"
+TITLE="${STUB_TITLE:-Stub Artist - Stub Song}"
+UPLOADER="${STUB_UPLOADER:-Stub Channel}"
+
+for i in $(seq 1 "${STUB_ITEMS:-1}"); do
+    # Real playlist items have their own titles; only vary them when there is
+    # more than one, so single-item filename assertions stay predictable.
+    ITEM_TITLE_I="$TITLE"
+    [[ "${STUB_ITEMS:-1}" -gt 1 ]] && ITEM_TITLE_I="$TITLE $i"
+    STEM="$i-$ITEM_TITLE_I [id$i]"
+    if [[ $EXTRACT_AUDIO -eq 1 ]]; then
+        printf 'stub audio %s' "$i" > "$DIR/$STEM.m4a"
+    else
+        printf 'stub video %s' "$i" > "$DIR/$STEM.mp4"
+        printf 'stub thumbnail' > "$DIR/$STEM.jpg"
+        cat > "$DIR/$STEM.info.json" <<JSON
+{"title": "$ITEM_TITLE_I", "uploader": "$UPLOADER", "id": "id$i",
+ "upload_date": "20260101", "webpage_url": "https://example.test/$i",
+ "categories": ["Music"]}
+JSON
+    fi
+done

@@ -1,0 +1,10 @@
+name = "dlp2music-companion"
+main = "src/index.ts"
+compatibility_date = "2026-05-01"
+
+# KV namespace for tokens + jobs.
+# Run: `wrangler kv namespace create COMPANION_KV`
+# then paste the id below.
+[[kv_namespaces]]
+binding = "COMPANION_KV"
+id = "REPLACE_WITH_KV_NAMESPACE_ID"
